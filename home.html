@@ -3,308 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Mariana</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Pórtfolio Mariana</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/sobre.css">
+    <link rel="stylesheet" href="styles/projetos.css">
+    <link rel="stylesheet" href="styles/conhecimentos.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 </head>
 <body>
-    
-    <header>
+    <header class="menu">
+        <a href="#home" class="logo">Mariana<span> Arantes</span>
+        </a>
+        
+        <i class='bx bx-menu' id="menu-icons"></i>
+
+        <nav class="nav-bar">
+            <a href="#home" class="active">Home</a>
+            <a href="#conhecimentos">Conhecimentos</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre mim</a>
+        </nav>
+
+        <button class="contato">
+            <a href="https://w.app/maykellycastro">Contate-me</a>
+        </button>
 
     </header>
 
-    <section>
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h1>Olá, me chamo Mariana<span> Arantes</span> </h1>
+            <h3 class="text-animation">Sou <span></span></h3>
+            
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mariana-arantes-1b66892bb/"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                <a href="https://github.com/MariArantes4"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        
+        <div class="home-img">
+            <img src="img/IMG-maykelly/imgMain-maykelly.jpg" alt="">
+        </div>
 
     </section>
-    <main class="content">
-        <section id="home">
-            <div class="shape"></div>
-            <div class="cta">
-                <h1 class="title">
-                    O sabor que vai até
-                    <span>VOCÊ!!!</span>
-                </h1>
-                <p class="descricao">
-                    Venha provar nossos hambúrgueres e sanduíches feitos com ingredientes frescos. Um lugar aconchegante com atendimento amigável. Esperamos por você!
-                </p>
+    <section class="conhecimentos" id="conhecimentos">
+        <div class="conhecimentos">
+            <h1>Conhecimentos</h1>
+        </div>
 
-                </p>
-                <div class="cta-buttons">
-                    <a href="#cardapio" class="btn-padrao">
-                        Ver cardápio
-                    </a>
-                    <a href="" id = "phone_btn">
-                        <button class="btn-padrao">
-                            <i class="fa-solid fa-phone"></i>
-                        </button>
-                        (67) 99999-9999
-                    </a>
-                </div>
-
-                <div class="social-media-buttons">
-                    <a href="https://web.whatsapp.com/" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/home?originalSubdomain=br" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-                
+        <div class="codigos">
+            <div class="card-code-py">
+                <a href="#"><i class="fa-brands fa-python" style="color: #000000;"></i></a>
+                <label>Python</label>
             </div>
             
-            <div class="banner">
-                <img src="imagens/pngwing.com.png" alt="">
+            <div class="card-code-fg">
+                <a href="#"><i class="fa-brands fa-figma" style="color: #000000;"></i></a>
+                <label>Figma</label>
             </div>
-        </section>
-        <section id="cardapio">
-            <h2 class="section-title">Cardápio</h2>
-            <h3 class="section-subtitle">Nossos pratos especiais.</h3>
-            <div class="area-cards">
-                <div class="card">
-                    <div class="card-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <img src="imagens/hamburger.png" alt="" class="card-img">
-                    <h3 class="card-title">X-Burguer 143</h3>
-                    <span class="card-descricao">
-                        Um hambúrguer suculento com queijo derretido, alface, tomate e molho especial no pão tostado.
-                    </span>
-                    <div class="card-rate">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <span>
-                            (500+)
-                        </span>
-                    </div>
-                    <div class="card-price">
-                        <h4>R$45,99</h4>
-                        <button class="btn-padrao">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <img src="imagens/hamburger.png" alt="" class="card-img">
-                    <h3 class="card-title">X-Burguer 143</h3>
-                    <span class="card-descricao">
-                        Um hambúrguer suculento com queijo derretido, alface, tomate e molho especial no pão tostado.
-                    </span>
-                    <div class="card-rate">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <span>
-                            (500+)
-                        </span>
-                    </div>
-                    <div class="card-price">
-                        <h4>R$45,99</h4>
-                        <button class="btn-padrao">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <img src="imagens/hamburger.png" alt="" class="card-img">
-                    <h3 class="card-title">X-Burguer 143</h3>
-                    <span class="card-descricao">
-                        Um hambúrguer suculento com queijo derretido, alface, tomate e molho especial no pão tostado.
-                    </span>
-                    <div class="card-rate">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <span>
-                            (500+)
-                        </span>
-                    </div>
-                    <div class="card-price">
-                        <h4>R$45,99</h4>
-                        <button class="btn-padrao">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <img src="imagens/hamburger.png" alt="" class="card-img">
-                    <h3 class="card-title">X-Burguer 143</h3>
-                    <span class="card-descricao">
-                        Um hambúrguer suculento com queijo derretido, alface, tomate e molho especial no pão tostado.
-                    </span>
-                    <div class="card-rate">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <span>
-                            (500+)
-                        </span>
-                    </div>
-                    <div class="card-price">
-                        <h4>R$45,99</h4>
-                        <button class="btn-padrao">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <img src="imagens/hamburger.png" alt="" class="card-img">
-                    <h3 class="card-title">X-Burguer 143</h3>
-                    <span class="card-descricao">
-                        Um hambúrguer suculento com queijo derretido, alface, tomate e molho especial no pão tostado.
-                    </span>
-                    <div class="card-rate">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <span>
-                            (500+)
-                        </span>
-                    </div>
-                    <div class="card-price">
-                        <h4>R$45,99</h4>
-                        <button class="btn-padrao">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <img src="imagens/hamburger.png" alt="" class="card-img">
-                    <h3 class="card-title">X-Burguer 143</h3>
-                    <span class="card-descricao">
-                        Um hambúrguer suculento com queijo derretido, alface, tomate e molho especial no pão tostado.
-                    </span>
-                    <div class="card-rate">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <span>
-                            (500+)
-                        </span>
-                    </div>
-                    <div class="card-price">
-                        <h4>R$45,99</h4>
-                        <button class="btn-padrao">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <img src="imagens/hamburger.png" alt="" class="card-img">
-                    <h3 class="card-title">X-Burguer 143</h3>
-                    <span class="card-descricao">
-                        Um hambúrguer suculento com queijo derretido, alface, tomate e molho especial no pão tostado.
-                    </span>
-                    <div class="card-rate">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <span>
-                            (500+)
-                        </span>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="card-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <img src="imagens/hamburger.png" alt="" class="card-img">
-                    <h3 class="card-title">X-Burguer 143</h3>
-                    <span class="card-descricao">
-                        
-                    </span>
-                    <div class="card-rate">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <span>
-                            (500+)
-                        </span>
-                    </div>
-                    <div class="card-price">
-                        <h4>R$45,99</h4>
-                        <button class="btn-padrao">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
+            <div class="card-code-html">
+                <a href="#"><i class="fa-brands fa-html5" style="color: #000000;"></i></a>
+                <label>HTML</label>
             </div>
-        </section>
-        <section id="depoimento">
-            <img src="imagens/chef.png" alt="" class="img-chefe">
-            <div class="depoimentos-content">
-                <h2 class="section-title">Depoimentos</h2>
-                <h3 class="section-subtitle">O que os clientes falam sobre nós.</h3>
-                <div class="area-feedbacks">
-                    <div class="feedback">
-                        <img src="imagens/avatar.png" alt="" class="feed-avatar">
-                        <div class="feedback-content">
-                            <p>
-                                BIANCA GONÇALVES
-                                <span>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                               
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feedback">
-                        <img src="imagens/avatar02.png" alt="" class="feed-avatar">
-                        <div class="feedback-content">
-                            <p>
-                                JULIANNY ROCHA
-                                <span>
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                              
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-code-css">
+                <a href="#"><i class="fa-brands fa-css3-alt" style="color: #000000;"></i></a>
+                <label>CSS</label>
             </div>
-        </section>
-    </main>
+            
+        </div>
+       
+    </section>
+
+    <section class="projetos" id="projetos">
+        <div class="projetos">
+            <h1 class="title-projetos">Projetos</h1>
+        </div>
+ 
+        <div class="cards-projetos">
+            <div class="projeto1">
+               <a href="https://github.com/MariArantes4/ladingPageLanchonete">Landipage</a>
+               <img src=" " alt="">
+            </div>
+            <div class="projeto2">
+                <a href="#">Site game</a>
+                <img src="" alt="">
+            </div>
+        </div>
+ 
+    </section>
+ 
+    <section class="sobre-mim" id="sobre">
+        <div class="container">
+            <h1>Sobre mim</h1>
+ 
+            <p class="text-sobre">
+                #
+            </p>
+           
+            <div class="circulo-img">
+                <img src="img/IMG-maykelly/imgMain-maykelly.jpg" alt="">
+            </div>
+ 
+        </div>
+ 
+    </section>
 
 </body>
 </html>
