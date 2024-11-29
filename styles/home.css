@@ -235,18 +235,6 @@ span {
 }
  
 @keyframes words {
- 
-    0%,
-    20% {
-        content: "Front end";
-    }
- 
-    21%,
-    40% {
-        content: "Back end";
-    }
- 
- 
     61%,
     80% {
         content: "Desenvolvedora";
