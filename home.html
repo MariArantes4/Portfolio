@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/projetos.css">
     <link rel="stylesheet" href="styles/conhecimentos.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/responsivo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -57,9 +58,9 @@
             <p class="text-sobre">Me chamo Mariana e sou iniciante na área de desenvolvimento de sistemas. Estou em constante aprendizado e pretendo me aprofundar no front-end. Busco adquirir experiência para crescer profissionalmente como desenvolvedora.
             </p>
            
-           <!-- <div class="circulo-img">
+            <div class="circulo-img">
                 <img src="img portfolio/Screenshot_20241210_144646_Photos.jpg" alt="">
-            </div>-->
+            </div>
  
         </div>
  
@@ -108,6 +109,15 @@
  
     </section>
  
+
+    <script>
+        const menuIcon = document.getElementById('menu-icons');
+        const navBar = document.querySelector('.nav-bar');
+        menuIcon.addEventListener('click', () => {
+            navBar.classList.toggle('active');
+        });
+    </script>
+
 
 </body>
 </html>
